@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHIKHAA INVESTMENT</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Quicksand', sans-serif; background: #fff; color: #333; }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(to right, #ffe680, #fff9cc);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav .logo-section img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    nav .logo-section h1 {
+      color: #0a3d62;
+      font-size: 1.3rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a{
+      font-weight: bold;
+      color: #003366;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    #home {
+      text-align: center;
+      background: linear-gradient(to bottom right, #fffbe0, #ffffff);
+    }
+
+    #home h2 span { color: goldenrod; }
+
+    .hero-buttons {
+      margin-top: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn.primary {
+      background: linear-gradient(to right, #facc15, #f59e0b);
+      color: white;
+    }
+
+    .btn.secondary {
+      background: white;
+      color: #b45309;
+      border: 2px solid #facc15;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Services */
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      width: 250px;
+      background: #fffbe6;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h4 {
+      color: #0a3d62;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Compare Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: #fef3c7;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #fff3cd;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .service-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul {
+        flex-direction: column;
+        background: #fff;
+        padding: 1rem;
+        display: none;
+      }
+    }
+    nav a{
+    text-decoration: none;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo-section">
+    <img src="logo.jpg" alt="Logo">
+    <h1>SHIKHAA INVESTMENT</h1>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="compare.html">Compare</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home -->
+<section id="home">
+  <h2>Secure Your Future with <span>SHIKHAA</span></h2>
+  <p>We help you grow wealth and protect your health—trusted investment and insurance guidance.</p>
+  <div class="hero-buttons">
+    <button class="btn primary">Explore Services</button>
+    <button class="btn secondary">Get a Quote</button>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    SHIKHAA INVESTMENT was founded with a mission to provide trusted financial advisory and insurance solutions to families and individuals. With years of experience in mutual funds, mediclaim policies, and personalized planning, we’ve helped hundreds secure their financial future.
+  </p>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="card">
+      <h4>Mutual Fund Advisory</h4>
+      <p>Smart investments tailored to your financial goals.</p>
+    </div>
+    <div class="card">
+      <h4>Mediclaim Insurance</h4>
+      <p>Comprehensive health plans for individuals and families.</p>
+    </div>
+    <div class="card">
+      <h4>Family Financial Planning</h4>
+      <p>Secure your future with our expert financial planning services.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Compare -->
+<section id="compare">
+  <h2>Compare Plans</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Plan</th>
+        <th>Coverage</th>
+        <th>Premium</th>
+        <th>Benefits</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Health Basic</td>
+        <td>₹5 Lakh</td>
+        <td>₹6,000/yr</td>
+        <td>Cashless, Emergency</td>
+      </tr>
+      <tr>
+        <td>Investment Plus</td>
+        <td>₹10 Lakh</td>
+        <td>₹10,000/yr</td>
+        <td>Returns + Life Cover</td>
+      </tr>
+      <tr>
+        <td>Family Secure</td>
+        <td>₹15 Lakh</td>
+        <td>₹15,000/yr</td>
+        <td>All Members Covered</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions? Reach out to us for personalized assistance.</p>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 SHIKHAA INVESTMENT. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

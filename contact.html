@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - SHIKHAA INVESTMENT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    /* ✨ Animation for form */
+    .slide-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 0.8s ease-out forwards;
+    }
+
+    .slide-up.delay-1 { animation-delay: 0.3s; }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-section">
+      <img src="logo.jpg" alt="Logo">
+      <h1>SHIKHAA INVESTMENT</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="compare.html">Compare</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section>
+    <h2>Contact Us</h2>
+    <p>Have a question? We're happy to assist you with your insurance or investment needs.</p>
+
+ <form action="https://formspree.io/projects/2774706223184870484" method="POST" class="slide-up delay-1">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="tel" name="phone" placeholder="Phone Number (optional)">
+  <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn primary">Send Message</button>
+</form>
+
+  </section>
+<form onsubmit="alert('Thanks! Your message was sent.')" ...>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SHIKHAA INVESTMENT. All rights reserved.</p>
+  </footer>
+
+  <!-- Trigger animation -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".slide-up").forEach(el => {
+        el.style.animationPlayState = "running";
+      });
+    });
+  </script>
+</body>
+</html>

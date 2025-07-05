@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Plans - SHIKHAA INVESTMENT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    /* ✨ Animation */
+    .fade-in {
+      opacity: 0;
+      transform: scale(0.98);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .fade-in.delay-1 { animation-delay: 0.2s; }
+    .fade-in.delay-2 { animation-delay: 0.4s; }
+    .fade-in.delay-3 { animation-delay: 0.6s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-section">
+      <img src="logo.jpg" alt="Logo">
+      <h1>SHIKHAA INVESTMENT</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="compare.html" class="active">Compare</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Compare Plans -->
+  <section>
+    <h2>Compare Plans</h2>
+    <p>Review and choose the best insurance & investment plans for your needs.</p>
+
+    <table class="fade-in delay-1">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Coverage</th>
+          <th>Premium</th>
+          <th>Benefits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="fade-in delay-2">
+          <td>Health Basic</td>
+          <td>₹5 Lakh</td>
+          <td>₹6,000/year</td>
+          <td>Cashless hospitals, emergency services</td>
+        </tr>
+        <tr class="fade-in delay-3">
+          <td>Investment Plus</td>
+          <td>₹10 Lakh</td>
+          <td>₹10,000/year</td>
+          <td>Returns + Life Cover + Tax Benefits</td>
+        </tr>
+        <tr class="fade-in delay-3">
+          <td>Family Secure</td>
+          <td>₹15 Lakh</td>
+          <td>₹15,000/year</td>
+          <td>Full family coverage + annual health check</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SHIKHAA INVESTMENT. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Animation trigger -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach(el => {
+        el.style.animationPlayState = "running";
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services - SHIKHAA INVESTMENT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    /* ✨ Animation Classes */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-section">
+      <img src="logo.jpg" alt="Logo">
+      <h1>SHIKHAA INVESTMENT</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="compare.html">Compare</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services Section -->
+  <section>
+    <h2>Our Services</h2>
+    <p>Explore the reliable services offered by SHIKHAA INVESTMENT for a secure and prosperous future.</p>
+
+    <div class="service-cards">
+      <div class="card fade-up fade-delay-1">
+        <h4>Mutual Fund Advisory</h4>
+        <p>Get expert advice on diversified mutual funds suited to your goals, risk profile, and investment duration.</p>
+      </div>
+      <div class="card fade-up fade-delay-2">
+        <h4>Mediclaim Insurance</h4>
+        <p>Protect your health with tailored mediclaim plans for individuals, families, and senior citizens.</p>
+      </div>
+      <div class="card fade-up fade-delay-3">
+        <h4>Family Financial Planning</h4>
+        <p>Plan your family's future with our goal-based investment & wealth preservation strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SHIKHAA INVESTMENT. All rights reserved.</p>
+  </footer>
+
+  <!-- Script to trigger animations after page load -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-up").forEach(el => {
+        el.style.animationPlayState = "running";
+      });
+    });
+  </script>
+</body>
+</html>
